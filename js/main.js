@@ -397,6 +397,11 @@ $(document).ready(function() {
         if (typeof updateCartTable === 'function') updateCartTable();
         $(document).trigger('cart-updated');
   });
+
+  $('#topMenuToggle').on('click', function() {
+    $('#navbar').toggleClass('mobile-open');
+    $('#mobileOverlay').toggleClass('active');
+  });
 });
 
 // Global function to close forms

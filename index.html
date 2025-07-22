@@ -1,0 +1,214 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bean Boutique</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+  </head>
+  <body>
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- YouTube-Style Sidebar Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-inner">
+        <!-- Top Header -->
+        <div class="sidebar-header">
+          <div class="logo">
+            <i class="fas fa-coffee"></i>
+            <span>Bean Boutique</span>
+          </div>
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Search Section -->
+        <div class="navbar-search">
+          <input type="search" placeholder="Search coffee..." />
+        </div>
+
+        <!-- Main Navigation -->
+        <ul class="nav-links">
+          <!-- Home Section -->
+          <li><a href="index.html" class="active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a></li>
+          
+          <li><a href="coffee-bean.html">
+            <i class="fas fa-seedling"></i>
+            <span>Coffee Beans</span>
+          </a></li>
+          
+          <li><a href="coffee-equipment.html">
+            <i class="fas fa-mug-hot"></i>
+            <span>Brewing Equipment</span>
+          </a></li>
+          
+          <li><a href="accessories.html">
+            <i class="fas fa-tools"></i>
+            <span>Accessories</span>
+          </a></li>
+
+          <!-- Section Header -->
+          <div class="nav-section">You</div>
+          
+          <li><a href="cart.html" class="has-notification">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Cart</span>
+            <div class="notification-dot"></div>
+          </a></li>
+          
+          <li><a href="aboutus.html">
+            <i class="fas fa-info-circle"></i>
+            <span>About Us</span>
+          </a></li>
+          
+          <li><a href="team.html">
+            <i class="fas fa-users"></i>
+            <span>Our Team</span>
+          </a></li>
+          
+          <li><a href="event.html">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Events</span>
+          </a></li>
+          
+          <li><a href="offer.html">
+            <i class="fas fa-gift"></i>
+            <span>Special Offers</span>
+          </a></li>
+
+          <!-- Section Header -->
+          <div class="nav-section">Community</div>
+          
+          <li><a href="contactus.html">
+            <i class="fas fa-envelope"></i>
+            <span>Contact Us</span>
+          </a></li>
+          
+          <li><a href="login.html">
+            <i class="fas fa-sign-in-alt"></i>
+            <span>Login</span>
+          </a></li>
+          
+          <li><a href="signup.html">
+            <i class="fas fa-user-plus"></i>
+            <span>Sign Up</span>
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+      <!-- Slideshow Section -->
+      <div class="slideshow-test">
+        <div>
+          <div class="slide-test active" style="background-image: url('./images/slideshow-1.png');"></div>
+          <div class="slide-test" style="background-image: url('./images/slideshow-3.png');"></div>
+          <div class="slide-test" style="background-image: url('./images/roastery.png');"></div>
+        </div>
+        <button id="prevTest"><i class="fas fa-chevron-left"></i></button>
+        <button id="nextTest"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
+      <!-- Description Section -->
+      <div class="description">
+        <h2>Welcome to Bean Boutique</h2>
+        <p>Discover the finest coffee beans and brewing equipment for the perfect cup every time. From single-origin beans to professional brewing tools,
+          we have everything you need to elevate your coffee experience.</p>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="./images/arabica.png" alt="Arabica Coffee Beans">
+          <h3>Arabica Coffee Beans</h3>
+          <p>Premium single-origin Arabica beans with rich, smooth flavor profile.</p>
+        </div>
+        
+        <div class="product-card">
+          <img src="./images/robusta.png" alt="Robusta Coffee Beans">
+          <h3>Robusta Coffee Beans</h3>
+          <p>Strong and bold Robusta beans perfect for espresso blends.</p>
+        </div>
+        
+        <div class="product-card">
+          <img src="./images/decaf.png" alt="Decaf Coffee Beans">
+          <h3>Decaf Coffee Beans</h3>
+          <p>Enjoy the rich taste of coffee without the caffeine.</p>
+        </div>
+        
+        <div class="product-card">
+          <img src="./images/espresso.png" alt="Espresso Machine">
+          <h3>Professional Espresso Machine</h3>
+          <p>Commercial-grade espresso machine for the perfect shot every time.</p>
+        </div>
+        
+        <div class="product-card">
+          <img src="./images/grinder.png" alt="Coffee Grinder">
+          <h3>Burr Coffee Grinder</h3>
+          <p>Precision grinding for consistent particle size and optimal extraction.</p>
+        </div>
+        
+        <div class="product-card">
+          <img src="./images/french.png" alt="French Press">
+          <h3>French Press</h3>
+          <p>Classic brewing method for full-bodied, rich coffee.</p>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="map-section">
+        <h3>Visit Our Store</h3>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4848.141020419899!2d96.10787601503797
+          !3d21.957557794504204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d500fb549f3%3A0xf7074b5c79e3cf18!2zQmVjYXVzZSBDb2ZmZWUgSHVi
+          IOWboOS4ug!5e0!3m2!1sen!2smm!4v1753011209195!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+
+    <!-- Popup Forms -->
+    <div class="popup-form" id="loginForm">
+      <div class="form-box">
+        <button class="close" onclick="closeForm('loginForm')">&times;</button>
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn">Login</button>
+      </div>
+    </div>
+
+    <div class="popup-form" id="signupForm">
+      <div class="form-box">
+        <button class="close" onclick="closeForm('signupForm')">&times;</button>
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn">Sign Up</button>
+      </div>
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+  </html>

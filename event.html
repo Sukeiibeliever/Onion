@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events - Bean Boutique</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="./images/logo.png" />
+</head>
+<body>
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- YouTube-Style Sidebar Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <!-- Top Header -->
+      <div class="sidebar-header">
+        <div class="logo">
+          <i class="fas fa-coffee"></i>
+          <span>Bean Boutique</span>
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Search Section -->
+      <div class="navbar-search">
+        <input type="search" placeholder="Search coffee..." />
+      </div>
+
+      <!-- Main Navigation -->
+      <ul class="nav-links">
+        <!-- Home Section -->
+        <li><a href="index.html">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a></li>
+        
+        <li><a href="coffee-bean.html">
+          <i class="fas fa-seedling"></i>
+          <span>Coffee Beans</span>
+        </a></li>
+        
+        <li><a href="coffee-equipment.html">
+          <i class="fas fa-mug-hot"></i>
+          <span>Brewing Equipment</span>
+        </a></li>
+        
+        <li><a href="accessories.html">
+          <i class="fas fa-tools"></i>
+          <span>Accessories</span>
+        </a></li>
+
+        <!-- Section Header -->
+        <div class="nav-section">You</div>
+        
+        <li><a href="cart.html" class="has-notification">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+          <div class="notification-dot"></div>
+        </a></li>
+        
+        <li><a href="aboutus.html">
+          <i class="fas fa-info-circle"></i>
+          <span>About Us</span>
+        </a></li>
+        
+        <li><a href="team.html">
+          <i class="fas fa-users"></i>
+          <span>Our Team</span>
+        </a></li>
+        
+        <li><a href="event.html" class="active">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Events</span>
+        </a></li>
+        
+        <li><a href="offer.html">
+          <i class="fas fa-gift"></i>
+          <span>Special Offers</span>
+        </a></li>
+
+        <!-- Section Header -->
+        <div class="nav-section">Community</div>
+        
+        <li><a href="contactus.html">
+          <i class="fas fa-envelope"></i>
+          <span>Contact Us</span>
+        </a></li>
+        
+        <li><a href="login.html">
+          <i class="fas fa-sign-in-alt"></i>
+          <span>Login</span>
+        </a></li>
+        
+        <li><a href="signup.html">
+          <i class="fas fa-user-plus"></i>
+          <span>Sign Up</span>
+        </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content" id="mainContent">
+    <h1>Upcoming Events</h1>
+    <p>Join us for exciting coffee workshops, tastings, and community events.</p>
+    
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="./images/training.png" alt="Coffee Training">
+        <h3>Coffee Brewing Workshop</h3>
+        <p>Learn the art of perfect coffee brewing with our expert baristas.</p>
+        <p><strong>Date:</strong> Every Saturday, 2:00 PM</p>
+        <button class="button">Register Now</button>
+      </div>
+      
+      <div class="product-card">
+        <img src="./images/tasting.jpg" alt="Coffee Tasting">
+        <h3>Coffee Cupping Session</h3>
+        <p>Experience different coffee varieties through professional cupping.</p>
+        <p><strong>Date:</strong> First Sunday of each month</p>
+        <button class="button">Register Now</button>
+      </div>
+      
+      <div class="product-card">
+        <img src="./images/barista.png" alt="Barista Competition">
+        <h3>Barista Competition</h3>
+        <p>Watch local baristas compete for the title of Best Barista.</p>
+        <p><strong>Date:</strong> Monthly competitions</p>
+        <button class="button">Register Now</button>
+      </div>
+      
+      <div class="product-card">
+        <img src="./images/roastery.png" alt="Roasting Demo">
+        <h3>Coffee Roasting Demo</h3>
+        <p>See how we roast our coffee beans to perfection.</p>
+        <p><strong>Date:</strong> Every Wednesday, 6:00 PM</p>
+        <button class="button">Register Now</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <!-- Popup Event Registration Form -->
+  <div class="popup-form" id="eventRegisterForm">
+    <div class="form-box">
+      <button class="close" onclick="$('#eventRegisterForm').removeClass('active')">&times;</button>
+      <h2>Event Registration</h2>
+      <form id="eventRegForm">
+        <input type="text" id="regName" placeholder="Your Name" required>
+        <input type="email" id="regEmail" placeholder="Your Email" required>
+        <input type="text" id="regEvent" placeholder="Event" readonly required>
+        <button type="submit" class="btn">Register</button>
+      </form>
+      <div class="form-status" id="eventRegStatus" style="display:none;"></div>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+  $(document).ready(function() {
+    // Show event registration form and fill event name
+    $(document).on('click', '.product-card .button, .product-card .btn', function(e) {
+      if ($(this).text().toLowerCase().includes('register')) {
+        e.preventDefault();
+        const eventName = $(this).closest('.product-card').find('h3').text();
+        $('#regEvent').val(eventName);
+        $('#regName').val('');
+        $('#regEmail').val('');
+        $('#eventRegStatus').hide().text('');
+        $('#eventRegisterForm').addClass('active');
+      }
+    });
+    // Handle form submit
+    $('#eventRegForm').on('submit', function(e) {
+      e.preventDefault();
+      $('#eventRegStatus').removeClass('error').addClass('success').text('Registration successful!').show();
+      setTimeout(function() {
+        $('#eventRegisterForm').removeClass('active');
+        $('#eventRegStatus').hide();
+      }, 1500);
+    });
+  });
+  </script>
+</body>
+</html>

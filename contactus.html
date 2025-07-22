@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Bean Boutique</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="./images/logo.png" />
+</head>
+<body>
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- YouTube-Style Sidebar Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <!-- Top Header -->
+      <div class="sidebar-header">
+        <div class="logo">
+          <i class="fas fa-coffee"></i>
+          <span>Bean Boutique</span>
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Search Section -->
+      <div class="navbar-search">
+        <input type="search" placeholder="Search coffee..." />
+      </div>
+
+      <!-- Main Navigation -->
+      <ul class="nav-links">
+        <!-- Home Section -->
+        <li><a href="index.html">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a></li>
+        
+        <li><a href="coffee-bean.html">
+          <i class="fas fa-seedling"></i>
+          <span>Coffee Beans</span>
+        </a></li>
+        
+        <li><a href="coffee-equipment.html">
+          <i class="fas fa-mug-hot"></i>
+          <span>Brewing Equipment</span>
+        </a></li>
+        
+        <li><a href="accessories.html">
+          <i class="fas fa-tools"></i>
+          <span>Accessories</span>
+        </a></li>
+
+        <!-- Section Header -->
+        <div class="nav-section">You</div>
+        
+        <li><a href="cart.html" class="has-notification">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+          <div class="notification-dot"></div>
+        </a></li>
+        
+        <li><a href="aboutus.html">
+          <i class="fas fa-info-circle"></i>
+          <span>About Us</span>
+        </a></li>
+        
+        <li><a href="team.html">
+          <i class="fas fa-users"></i>
+          <span>Our Team</span>
+        </a></li>
+        
+        <li><a href="event.html">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Events</span>
+        </a></li>
+        
+        <li><a href="offer.html">
+          <i class="fas fa-gift"></i>
+          <span>Special Offers</span>
+        </a></li>
+
+        <!-- Section Header -->
+        <div class="nav-section">Community</div>
+        
+        <li><a href="contactus.html" class="active">
+          <i class="fas fa-envelope"></i>
+          <span>Contact Us</span>
+        </a></li>
+        
+        <li><a href="login.html">
+          <i class="fas fa-sign-in-alt"></i>
+          <span>Login</span>
+        </a></li>
+        
+        <li><a href="signup.html">
+          <i class="fas fa-user-plus"></i>
+          <span>Sign Up</span>
+        </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content" id="mainContent">
+    <div class="contact-section">
+      <div class="contact-container">
+        <div class="contact-form">
+          <h1>Contact Us</h1>
+          <p>Get in touch with us for any questions or inquiries.</p>
+          
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Coffee Street, Downtown</p>
+          <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+          <p><i class="fas fa-envelope"></i> info@beanboutique.com</p>
+          <p><i class="fas fa-clock"></i> Mon-Fri: 8AM-6PM, Sat-Sun: 9AM-5PM</p>
+          
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4848.141020419899!2d96.10787601503797!3d21
+            .957557794504204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d500fb549f3%3A0xf7074b5c79e3cf18!2zQm
+            VjYXVzZSBDb2ZmZWUgSHViIOWboOS4ug!5e0
+            !3m2!1sen!2smm!4v1753011209195!5m2!1sen!2smm" width="600" height="450" style="border:0;" 
+            allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
